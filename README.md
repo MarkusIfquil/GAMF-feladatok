@@ -1,26 +1,3 @@
-Országos Programozó Verseny – Neumann János Egyetem GAMF Kar – 2024
-1. forduló (online)
-A feladatok megoldásának szabályai
-- Az 1. forduló két feladatot tartalmaz és összesen 9 kérdést.
-- Minden kérdésre egy nemnegatív egész szám vagy egy string a válasz (az adott kérdésnél szerepel,
-hogy melyik). Ezeket az eredményeket kell beküldeni. A csapatnak ügyelnie kell arra, hogy pontosan a
-kérdésnél leírt módon küldje be a választ.
-- Beküldési határidő: 2024. február 24. (23:59)
-- A megoldások beküldését az alábbi linken található űrlapon keresztül kell elvégezni (kizárólag a
-versenyre nevezett csapatoknak):
-https://forms.gle/estwoG8Pra6L793Z9
-- Minden nevezett csapat egyetlen alkalommal küldheti be (fordulónként) a megoldásait. Ha egy csapat
-többször is beküld megoldást, akkor a legkorábbit vesszük figyelembe a pontozásnál. Tehát csak akkor
-érdemes a megoldásokat beküldeni, ha valamennyi kérdésre megvan a válasz, vagy a csapat már nem
-tud vagy nem akar több feladatot megoldani. Kérjük, hogy nevezésnél megadott csapatnéven
-(karakterhelyesen) küldjék be a válaszokat! Ha a csapat elfelejtette a csapatnevét, akkor a nevezéskor
-kapott visszaigazoló e-mailben azt megtalálja.
-- A megoldásokat tetszőleges módon számíthatja ki a csapat. Írhat bármilyen programnyelven
-algoritmust, számolhat papíron, használhatja az internetet vagy tetszőleges szoftvert, …. A
-csapattagokon kívül más személytől azonban nem kérhetnek segítséget.
-- A megoldások részleteit nem kell beküldeni, csak a kérdésekre adott válaszokat (nemnegatív egész
-számok vagy stringek).
-- A forduló helyes megoldásait és a csapatok pontszámait minden forduló lezárta után ismertetjük.
 Az 1. forduló feladatai
 1. feladat
 A szamok.txt fájlban 3000 db 10 jegyű szám szerepel (nem feltétlenül különböző). Minden szám új
