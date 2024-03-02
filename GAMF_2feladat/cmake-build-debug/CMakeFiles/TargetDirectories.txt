@@ -1,0 +1,3 @@
+/home/Markus/CLionProjects/GAMF_2feladat/cmake-build-debug/CMakeFiles/GAMF_2feladat.dir
+/home/Markus/CLionProjects/GAMF_2feladat/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/Markus/CLionProjects/GAMF_2feladat/cmake-build-debug/CMakeFiles/rebuild_cache.dir
