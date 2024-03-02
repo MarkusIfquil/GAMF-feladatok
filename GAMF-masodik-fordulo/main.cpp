@@ -1,71 +1,80 @@
 #include <iostream>
 #include <bits/stdc++.h>
-#include <fstream>
-#include <cmath>
-#include <boost/algorithm/string.hpp>
-#include <cinttypes>
+#include <string>
+
 using namespace std;
 string MAGIC0 = "216816212162121681684816816";
 
-vector<unsigned long long int> FirstProblemA(int n, int start) {
-    vector<unsigned long long int> listOfSequence;
-    listOfSequence.push_back(start);
+vector<int> magicVector;
+
+void enterMagicIntoVector() {
+    for (char c: MAGIC0) {
+        magicVector.push_back(c - '0');
+    }
+}
+
+vector<vector<int>> FirstProblemA(int n, int start) {
+    vector<vector<int>> listOfSequence;
+    vector<int> startVector;
+    int a = start;
+    while (a != 0) {
+        startVector.push_back(a % 10);
+        a /= 10;
+    }
+    listOfSequence.push_back(startVector);
     for (int i = 1; i < n; i++) {
-        unsigned long long int x = listOfSequence[i - 1], y, num = 0, j = 1;
-        while (x != 0) {
-            y = (x % 10) * 2;
-            x = x / 10;
-            if (y > 9) {
-                num += (y % 10) * j;
-                j *= 10;
-                num += (y / 10) * j;
-            } else {
-                num += (y % 10) * j;
-            }
-            j *= 10;
+        vector<int> x = listOfSequence[i - 1];
+        vector<int> newX;
+        for (int q: x) {
+            if (q * 2 > 9) {
+                newX.push_back((q * 2) / 10);
+                newX.push_back((q * 2) % 10);
+            } else newX.push_back(q * 2);
         }
-        listOfSequence.push_back(num);
+        listOfSequence.push_back(newX);
     }
     return listOfSequence;
 }
 
 int FirstProblemB() {
     for (int i = 10; i < 100; i++) {
-        vector<unsigned long long int> v = FirstProblemA(31, i);
-        for (auto a: v) {
-            unsigned long long int x = a, y, num = 0, j = 1, q = 0;
-            while (x != 0 && i < 27) {
-                y = x % 10;
-                x /= 10;
-                num += y * j;
-                j *= 10;
-                q++;
+        int count = 0;
+        vector<vector<int>> triedSequence = FirstProblemA(31, i);
+        for (auto a: triedSequence) {
+            unsigned long int k = magicVector.size() - 1;
+            for (unsigned long int g = a.size() - 1; g > a.size() - 28; g++) {
+                if (a.size() < 27)
+                    break;
+                if (a[g] == magicVector[k]) {
+                    count++;
+                }
+                k--;
             }
-            if(to_string(num)==MAGIC0)
-            {
-
-            }
-
+            if (count == 27)
+                return i;
+            count = 0;
         }
+
     }
 }
 
 
 int main() {
-    vector<vector<string>> vectorOfGames;
-    ifstream File("jatszmak.txt");
-    string Line;
-    while (getline(File, Line)) {
-        stringstream ss(Line);
-        string s;
-        vector<string> vectorOfMovesInGame;
-        boost::split(vectorOfMovesInGame, Line, boost::is_any_of("\t"));
-        vectorOfGames.push_back(vectorOfMovesInGame);
-    }
-    File.close();
-
+    enterMagicIntoVector();
+    /*
     int n;
     cin >> n;
-    cout << FirstProblemA(n, 1)[n];
+    vector<vector<int>> t = FirstProblemA(n, 1);
+    for (auto a: t) {
+        for (int i: a) {
+            cout << i;
+        }
+        cout << "\n";
+    }
+    */
+    cout << FirstProblemB();
+    /*
+
+    */
     return 0;
 }
