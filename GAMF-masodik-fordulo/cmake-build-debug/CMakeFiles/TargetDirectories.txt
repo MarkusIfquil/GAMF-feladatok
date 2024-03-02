@@ -1,3 +1,3 @@
-/home/MarkusIfquil/CLionProjects/GAMF-masodik-fordulo/cmake-build-debug/CMakeFiles/GAMF_masodik_fordulo.dir
-/home/MarkusIfquil/CLionProjects/GAMF-masodik-fordulo/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/MarkusIfquil/CLionProjects/GAMF-masodik-fordulo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/Markus/CLionProjects/GAMF-feladatok/GAMF-masodik-fordulo/cmake-build-debug/CMakeFiles/GAMF_masodik_fordulo.dir
+/home/Markus/CLionProjects/GAMF-feladatok/GAMF-masodik-fordulo/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/Markus/CLionProjects/GAMF-feladatok/GAMF-masodik-fordulo/cmake-build-debug/CMakeFiles/rebuild_cache.dir

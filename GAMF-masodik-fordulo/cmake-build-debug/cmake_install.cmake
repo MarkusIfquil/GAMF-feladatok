@@ -1,4 +1,4 @@
-# Install script for directory: /home/MarkusIfquil/CLionProjects/GAMF-masodik-fordulo
+# Install script for directory: /home/Markus/CLionProjects/GAMF-feladatok/GAMF-masodik-fordulo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/MarkusIfquil/CLionProjects/GAMF-masodik-fordulo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/Markus/CLionProjects/GAMF-feladatok/GAMF-masodik-fordulo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
