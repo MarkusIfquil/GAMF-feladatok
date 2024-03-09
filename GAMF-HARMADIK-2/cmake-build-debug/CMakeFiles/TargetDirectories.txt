@@ -1,0 +1,3 @@
+/home/MarkusIfquil/CLionProjects/GAMF-HARMADIK-2/cmake-build-debug/CMakeFiles/GAMF_HARMADIK_2.dir
+/home/MarkusIfquil/CLionProjects/GAMF-HARMADIK-2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/MarkusIfquil/CLionProjects/GAMF-HARMADIK-2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
